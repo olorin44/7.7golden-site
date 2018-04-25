@@ -1,0 +1,33 @@
+$grid-columns: 12;
+
+@for $i from 1 through $grid-columns {
+  .col-m-#{$i} {
+    width: 100% / 12 * $i;
+  }
+}
+
+@for $i from 1 through $grid-columns {
+	.col-offset-#{$i} {
+		margin-left: 100% / 12 * $i;
+	}
+}
+
+* {
+	box-sizing: border-box;
+}
+
+.container {
+	margin: 0 auto;
+	max-width: 1200px;
+	width: 100%;
+}
+
+.row {
+	overflow: auto;
+	&::before,
+	&::after {
+		clear: both;
+    	content: " ";
+    	display: table;
+	}
+}
