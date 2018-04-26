@@ -18,16 +18,90 @@ $grid-columns: 12;
 
 .container {
 	margin: 0 auto;
-	max-width: 1200px;
+	max-width: 1400px;
 	width: 100%;
 }
 
 .row {
 	overflow: auto;
-	&::before,
-	&::after {
+	
+	&::before, &::after {
 		clear: both;
     	content: " ";
     	display: table;
 	}
+}
+
+//styles for header:
+
+.company {
+}
+
+.nav-links {
+	list-style-type: none;
+	margin: 0;
+
+	a {
+		font-family: 'Montserrat', sans-serif;
+		font-size: 14px;
+		font-weight: bold;
+		line-height: 3em;
+		margin: 10%;
+		text-decoration: none;
+	}
+
+	li {
+		display: inline-flex;
+	}
+}
+
+.page-header {
+	// padding: 0;
+}
+
+.page-header > .container {
+	align-items: center;
+	display: flex;
+	justify-content: space-around;
+}
+
+//styles for section home:
+
+.section-home {
+	// background: url("images/section-home-background-image.jpg");
+	background-image: url("images/section-home-background-image.jpg");
+	text-align: center;
+
+	h2 {
+		font-family: 'Muli', sans-serif;
+		font-size: 40px;
+		font-style: italic;
+		letter-spacing: -1px;
+	}
+
+	h1 {
+		font-family: 'Montserrat', sans-serif;
+		font-size: 75px;
+		font-weight: bold;
+		letter-spacing: -1.88px;
+	}
+}
+
+.section-home-btn {
+	background-color: #fed136;
+	border-radius: 5px;
+	height: 65px;
+	width: 240px;
+	a {
+		color: white;
+		font-family: 'Montserrat', sans-serif;
+		font-size: 18px;
+		font-weight: bold;
+		text-decoration: none;
+	}
+}
+
+//styles for section services:
+.section-services {
+	text-align: center;
 }
