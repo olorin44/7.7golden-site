@@ -178,5 +178,47 @@
 
 .section-services {
   text-align: center;
+  padding: 5% 20%;
+}
+
+.section-services .col-m-4 {
+  float: left;
+}
+
+.section-portfolio {
+  background-color: #f7f7f7;
+  text-align: center;
+  padding: 5% 20%;
+}
+
+.section-portfolio .col-m-4 {
+  float: left;
+}
+
+.section-about {
+  text-align: center;
+}
+
+.section-about .col-m-4 {
+  float: left;
+}
+
+.section-team {
+  background-color: #f9f9f9;
+  text-align: center;
+  padding: 5% 25%;
+}
+
+.section-team .col-m-4 {
+  float: left;
+}
+
+.section-logos {
+  padding: 5% 5%;
+  text-align: center;
+}
+
+.section-logos img {
+  margin: 1.5%;
 }
 /*# sourceMappingURL=style.css.map */

@@ -92,6 +92,7 @@ $grid-columns: 12;
 	border-radius: 5px;
 	height: 65px;
 	width: 240px;
+	
 	a {
 		color: white;
 		font-family: 'Montserrat', sans-serif;
@@ -104,4 +105,59 @@ $grid-columns: 12;
 //styles for section services:
 .section-services {
 	text-align: center;
+	padding: 5% 20%;
+	
+	.col-m-4 {
+		float: left;
+	}
+}
+
+//styles for section portfolio:
+.section-portfolio {
+	background-color: #f7f7f7;
+	text-align: center;
+	padding: 5% 20%;
+
+	.col-m-4 {
+		float: left;
+	}
+}
+// .section-portfolio-background-text {
+// 	background-color: #fff;
+// 	border: 1px solid red;
+// 	height: 93px;
+// 	width: 291px;
+// }
+
+//styles for secion about:
+.section-about {
+	text-align: center;
+	
+	.col-m-4 {
+		float: left;
+	}
+}
+
+
+//styles for section team:
+.section-team {
+	background-color: #f9f9f9;
+	text-align: center;
+	padding: 5% 25%;
+	
+	.col-m-4 {
+		float: left;
+	}
+}
+
+//styles for section logos:
+.section-logos {
+	padding: 5% 5%;
+	text-align: center;
+
+	img {
+		// display: inline-block;
+		margin: 1.5%;
+
+	}
 }
