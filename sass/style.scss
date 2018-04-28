@@ -168,6 +168,7 @@ $grid-columns: 12;
 		font-family: 'Montserrat', sans-serif;
 		font-size: 1.2em;
 	}
+
 	p {
 		color: #737373;
 		font-family: 'Muli', sans-serif;
@@ -179,13 +180,80 @@ $grid-columns: 12;
 //styles for secion about:
 
 .section-about {
+	position: relative;
 	text-align: center;
 	
 	.col-m-4 {
 		float: left;
 	}
+
+	.row {
+		margin-top: 100px;
+	}
 }
 
+.section-about-image {
+	border: 7px solid #f1f1f1;
+	border-radius: 50%;
+}
+
+.section-about-image-yellow-circle {
+	background-color: #fed136;
+	display: inline-block;
+	height: 180px;
+	margin-bottom: 100px;
+	width: 180px;
+
+	h3 {
+		color: #fff;
+		font-family: 'Montserrat', sans-serif;
+		font-size: 1.2em;
+	}
+}
+
+.section-about-title {
+	h2 {
+		color: #222;
+		font-family: 'Montserrat', sans-serif;
+		font-size: 2.2em;
+	}
+
+	p {
+		color: #777;
+		font-family: 'Muli', sans-serif;
+	}
+}
+
+.section-about-text-left h3, .section-about-text-right h3 {
+	color: #222;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 1.2em;
+}
+
+.section-about-text-left p, .section-about-text-right p {
+	color: #777;
+	font-family: 'Muli', sans-serif;
+	font-size: .9em;
+}
+
+.section-about-text-left h3, .section-about-text-left p {
+	text-align: right;
+}
+
+.section-about-text-right h3, .section-about-text-right p {
+	text-align: left;
+}
+
+.section-about-vertical-line::after {
+    content:"";
+    position: absolute;
+    z-index: -1;
+    top: 20%;
+    bottom: 10%;
+    left: 50%;
+    border-left: 3px solid #f1f1f1;
+    transform: translate(-50%);
+}
 
 //styles for section team:
 
@@ -196,6 +264,34 @@ $grid-columns: 12;
 	
 	.col-m-4 {
 		float: left;
+	}
+}
+
+.section-team-person {
+	h3 {
+		color: #222;
+		font-family: 'Montserrat', sans-serif;
+	}
+
+	p {
+		color: #777;
+		font-family: 'Roboto', sans-serif;
+		font-size: 0.9em;
+		// margin-bottom: 80px;
+	}
+}
+
+.section-team-title {
+	h2 {
+		color: #222;
+		font-family: 'Montserrat', sans-serif;
+		font-size: 2.2em
+	}
+
+	p {
+		color: #777;
+		font-family: 'Muli', sans-serif;
+		margin-bottom: 80px;
 	}
 }
 
