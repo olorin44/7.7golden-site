@@ -34,14 +34,12 @@ $grid-columns: 12;
 
 //styles for header:
 
-.company {
-}
-
 .nav-links {
 	list-style-type: none;
 	margin: 0;
 
 	a {
+		color: #fff;
 		font-family: 'Montserrat', sans-serif;
 		font-size: 14px;
 		font-weight: bold;
@@ -56,7 +54,8 @@ $grid-columns: 12;
 }
 
 .page-header {
-	// padding: 0;
+	margin-bottom: 180px;
+	padding-top: 30px;
 }
 
 .page-header > .container {
@@ -68,8 +67,11 @@ $grid-columns: 12;
 //styles for section home:
 
 .section-home {
-	// background: url("images/section-home-background-image.jpg");
-	background-image: url("images/section-home-background-image.jpg");
+	background: url("../images/section-home-background-image.jpg") no-repeat;
+	background-position: center;
+	background-size: auto;
+	color: #fff;
+	height: 700px;
 	text-align: center;
 
 	h2 {
@@ -103,6 +105,7 @@ $grid-columns: 12;
 }
 
 //styles for section services:
+
 .section-services {
 	text-align: center;
 	padding: 5% 20%;
@@ -110,26 +113,71 @@ $grid-columns: 12;
 	.col-m-4 {
 		float: left;
 	}
+
+	h2 {
+		font-family: 'Montserrat', sans-serif;
+		font-size: 2.2em;
+	}
+
+	h3 {
+		font-family: 'Montserrat', sans-serif;
+		font-size: 1.1em;
+	}
+
+	p {
+		font-family: 'Roboto', sans-serif;
+		font-size: .9em;
+	}
+}
+
+.section-services-icon {
+	margin-top: 50px;
 }
 
 //styles for section portfolio:
+
 .section-portfolio {
 	background-color: #f7f7f7;
 	text-align: center;
-	padding: 5% 20%;
+	padding: 30px 23%;
 
 	.col-m-4 {
 		float: left;
 	}
 }
-// .section-portfolio-background-text {
-// 	background-color: #fff;
-// 	border: 1px solid red;
-// 	height: 93px;
-// 	width: 291px;
-// }
+
+.section-portfolio-title {
+	h2 {
+		color: #222;
+		font-family: 'Montserrat', sans-serif;
+		font-size: 2.2em;
+	}
+
+	p {
+		color: #777;
+		font-family: 'Muli', sans-serif;
+	}
+}
+
+.section-portfolio-image-text {
+	bottom: 100px;
+	position: relative;
+
+	h3 {
+		color: #333;
+		font-family: 'Montserrat', sans-serif;
+		font-size: 1.2em;
+	}
+	p {
+		color: #737373;
+		font-family: 'Muli', sans-serif;
+		font-size: .9em;
+	}
+}
+
 
 //styles for secion about:
+
 .section-about {
 	text-align: center;
 	
@@ -140,6 +188,7 @@ $grid-columns: 12;
 
 
 //styles for section team:
+
 .section-team {
 	background-color: #f9f9f9;
 	text-align: center;
@@ -150,19 +199,58 @@ $grid-columns: 12;
 	}
 }
 
+.section-team-icon-twitter {
+	background: url("../images/section-team-icon-twitter.png") no-repeat;
+	
+	&:hover {
+		background: url("../images/section-team-icon-twitter-hover.png") no-repeat;
+	}
+}
+
+.section-team-icon-facebook {
+	background: url("../images/section-team-icon-facebook.png") no-repeat;
+
+	&:hover {
+		background: url("../images/section-team-icon-facebook-hover.png") no-repeat;
+	}
+}
+
+.section-team-icon-pinterest {
+	background: url("../images/section-team-icon-pinterest.png") no-repeat;
+
+	&:hover {
+		background: url("../images/section-team-icon-pinterest-hover.png") no-repeat;
+	}
+}
+
+.section-team-icon-googleplus {
+	background: url("../images/section-team-icon-googleplus.png") no-repeat;
+
+	&:hover {
+		background: url("../images/section-team-icon-googleplus-hover.png") no-repeat;
+	}
+}
+
+[class^="section-team-icon-"] {
+	display: inline-block;
+	height: 42px;
+	width: 42px;
+}
+
 //styles for section logos:
+
 .section-logos {
 	padding: 5% 5%;
 	text-align: center;
 
 	img {
-		// display: inline-block;
 		margin: 1.5%;
 
 	}
 }
 
 //styles for section contacts:
+
 form {
 	margin: 0 auto;
 	max-width: 1000px;
@@ -185,15 +273,15 @@ form {
 }
 
 .section-contacts {
-	background-color: #222;
-	background-image: url("../images/section-contacts-map-image.png");
-	background-position: 245% 6%;
-	background-repeat: no-repeat;
+	background: #222 url("../images/section-contacts-map-image.png") no-repeat;
+	background-position: 245% -190%;
+	height: 677px;
 	text-align: center;
 
 	h2 {
 		color: #fff;
 		font-family: 'Montserrat', sans-serif;
+		padding-top: 100px;
 	}
 
 	p {
@@ -215,6 +303,57 @@ form {
 	font-size: 18px;
 	font-weight: bold;
 	height: 65px;
+	margin-bottom: 100px;
 	margin-top: 30px;
 	width: 240px;
+}
+
+//styles for section footer:
+
+.section-footer {
+	p {
+		display: inline-block;
+		font-family: 'Montserrat', sans-serif;
+		font-size: 0.9em;
+		margin: 50px 110px 50px 220px;
+	}
+}
+
+[class^="section-footer-icon-"] {
+	display: inline-block;
+	height: 42px;
+	margin-top: 50px;
+	width: 42px;
+}
+
+.section-footer-icon-twitter {
+	background: url("../images/section-footer-icon-twitter.png") no-repeat;
+	
+	&:hover {
+		background: url("../images/section-team-icon-twitter-hover.png") no-repeat;
+	}
+}
+
+.section-footer-icon-facebook {
+	background: url("../images/section-footer-icon-facebook.png") no-repeat;
+
+	&:hover {
+		background: url("../images/section-team-icon-facebook-hover.png") no-repeat;
+	}
+}
+
+.section-footer-icon-pinterest {
+	background: url("../images/section-footer-icon-pinterest.png") no-repeat;
+
+	&:hover {
+		background: url("../images/section-team-icon-pinterest-hover.png") no-repeat;
+	}
+}
+
+.section-footer-icon-googleplus {
+	background: url("../images/section-footer-icon-googleplus.png") no-repeat;
+
+	&:hover {
+		background: url("../images/section-team-icon-googleplus-hover.png") no-repeat;
+	}
 }
