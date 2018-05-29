@@ -277,7 +277,6 @@ $grid-columns: 12;
 		color: #777;
 		font-family: 'Roboto', sans-serif;
 		font-size: 0.9em;
-		// margin-bottom: 80px;
 	}
 }
 
@@ -454,7 +453,32 @@ form {
 	}
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1650px) {
+
+	@for $i from 1 through $grid-columns {
+  .col-ms-#{$i} {
+    width: 100% / 12 * $i;
+  }
+}
+	
+//styles for section portfolio:
+
+.section-portfolio {
+	.col-ms-6 {
+		float: left;
+	}
+}
+}
+
+//styles for section team:
+
+.section-team {
+	.col-ms-6 {
+		float: left;
+	}
+}
+
+@media (max-width: 1100px) {
 
 	@for $i from 1 through $grid-columns {
   .col-s-#{$i} {
@@ -523,63 +547,23 @@ form {
 }
 
 .section-about {
-	position: relative;
 	text-align: center;
 	
-	.col-s-6 {
-		float: left;
-	}
-
 	.row {
-		margin-top: 50px;
-	}
-}
-
-.section-about img {
-	float: right;
-}
-
-.section-about-image-yellow-circle {
-	background-color: #fed136;
-	display: inline-block;
-	height: 180px;
-	margin-bottom: 100px;
-	width: 180px;
-
-	h3 {
-		color: #fff;
-		font-family: 'Montserrat', sans-serif;
-		font-size: 0.9em;
-	}
-}
-
-.section-about-title {
-	h2 {
-		color: #222;
-		font-family: 'Montserrat', sans-serif;
-		font-size: 1.2em;
-	}
-
-	p {
-		color: #777;
-		font-family: 'Muli', sans-serif;
+		margin-top: 30px;
 	}
 }
 
 .section-about-text-left h3, .section-about-text-right h3 {
-	color: #222;
-	font-family: 'Montserrat', sans-serif;
 	font-size: 0.9em;
 }
 
 .section-about-text-left p, .section-about-text-right p {
-	color: #777;
-	font-family: 'Muli', sans-serif;
 	font-size: .7em;
 }
 
 .section-about-text-left h3, .section-about-text-left p {
-	text-align: left;
+	text-align: right;
 }
 
 .section-about-text-right h3, .section-about-text-right p {
@@ -604,6 +588,62 @@ form {
 	p {
 		margin-bottom: 50px;
 	}
+}
+
+//styles for section contacts:
+
+form {
+	max-width: 700px;
+}
+
+#form-name, #form-email, #form-subject {
+	height: 30px;
+}
+
+#form-message {
+	height: 150px;
+}
+
+#form-name, #form-email, #form-subject, #form-message {
+	margin-top: 20px;
+}
+
+.section-contacts {
+	height: 600px;
+
+	h2 {
+		padding-top: 50px;
+	}
+}
+
+.section-contacts-form-half {
+	float: none;
+	margin: 0 auto;
+	width: 80%;
+}
+
+.section-contacts-btn {
+	font-size: .9em;
+	height: 40px;
+	margin-bottom: 50px;
+	width: 150px;
+}
+
+//styles for section footer:
+
+.section-footer {
+	p {
+		font-size: .8em;
+		margin: 0 auto;
+		text-align: center;
+		// margin: 50px 110px 50px 220px;
+	}
+}
+
+[class^="section-footer-icon-"] {
+	float: right;
+	margin-right: 20px;
+	margin-top: 20px;
 }
 
 }
