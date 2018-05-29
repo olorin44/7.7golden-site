@@ -453,3 +453,157 @@ form {
 		background: url("../images/section-team-icon-googleplus-hover.png") no-repeat;
 	}
 }
+
+@media (max-width: 768px) {
+
+	@for $i from 1 through $grid-columns {
+  .col-s-#{$i} {
+    width: 100% / 12 * $i;
+  }
+}
+
+//styles for header:
+
+.nav-links {
+
+	a {
+		font-size: 0.7em;
+		line-height: 1em;
+		margin: 10%;
+	}
+
+	li {
+		display: block;
+	}
+}
+
+.page-header {
+	margin-bottom: 100px;
+	padding-top: 15px;
+}
+
+//styles for section home:
+
+.section-home {
+	height: 500px;
+	text-align: center;
+
+	h2 {
+		font-size: 20px;
+	}
+
+	h1 {
+		font-size: 24px;
+	}
+}
+
+.section-home-btn {
+	height: 45px;
+	width: 150px;
+	
+	a {
+		font-size: 1em;
+	}
+}
+
+//styles for section portfolio:
+	
+	.section-portfolio img {
+		width: 100%;
+	}
+
+	.section-portfolio h3 {
+		color: orange;
+	}
+
+//styles for secion about:
+
+.col-offset-4 {
+	margin-left: 0;
+}
+
+.section-about {
+	position: relative;
+	text-align: center;
+	
+	.col-s-6 {
+		float: left;
+	}
+
+	.row {
+		margin-top: 50px;
+	}
+}
+
+.section-about img {
+	float: right;
+}
+
+.section-about-image-yellow-circle {
+	background-color: #fed136;
+	display: inline-block;
+	height: 180px;
+	margin-bottom: 100px;
+	width: 180px;
+
+	h3 {
+		color: #fff;
+		font-family: 'Montserrat', sans-serif;
+		font-size: 0.9em;
+	}
+}
+
+.section-about-title {
+	h2 {
+		color: #222;
+		font-family: 'Montserrat', sans-serif;
+		font-size: 1.2em;
+	}
+
+	p {
+		color: #777;
+		font-family: 'Muli', sans-serif;
+	}
+}
+
+.section-about-text-left h3, .section-about-text-right h3 {
+	color: #222;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 0.9em;
+}
+
+.section-about-text-left p, .section-about-text-right p {
+	color: #777;
+	font-family: 'Muli', sans-serif;
+	font-size: .7em;
+}
+
+.section-about-text-left h3, .section-about-text-left p {
+	text-align: left;
+}
+
+.section-about-text-right h3, .section-about-text-right p {
+	text-align: left;
+}
+
+.section-about-vertical-line::after {
+    display: none;
+}
+
+//styles for section team:
+
+.section-team {
+	float: none;
+}
+
+.section-team-title {
+	h2 {
+		font-size: 1.2em
+	}
+
+	p {
+		margin-bottom: 50px;
+	}
+}
+
+}
