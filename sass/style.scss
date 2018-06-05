@@ -70,6 +70,10 @@ body {
 
 //styles for header:
 
+#menu-toggle input {
+	display: none;
+}
+
 .nav-links {
 	list-style-type: none;
 	margin: 0;
