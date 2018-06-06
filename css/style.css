@@ -533,9 +533,9 @@ form {
   }
   #menu-toggle {
     display: block;
-    left: -100px;
-    position: relative;
-    top: 50px;
+    left: 10px;
+    position: fixed;
+    top: 10px;
     -webkit-user-select: none;
        -moz-user-select: none;
         -ms-user-select: none;
@@ -566,21 +566,24 @@ form {
     transform: none;
   }
   #menu {
-    background: lightgray;
-    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 2%;
     margin: -100px 0 0 -50px;
     padding: 50px;
     padding-top: 120px;
     position: absolute;
-    transform: translate(0, -100%);
+    transform: translate(-100%, 0);
     transition: transform 0.2s;
-    width: 200px;
+    width: 150px;
   }
   .nav-links a {
     color: grey;
     font-size: 0.9em;
     line-height: 1em;
-    margin: 10%;
+    margin: 5%;
+  }
+  .nav-links a:hover {
+    color: #fff;
   }
   .nav-links li {
     display: block;
