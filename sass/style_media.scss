@@ -63,7 +63,6 @@ $grid-columns: 12;
   	border-radius: 3px;
   	display: block;
   	height: 5px;
-  	text-align: center;
   	margin-bottom: 5px;
   	position: relative;
   	width: 30px;
@@ -75,15 +74,18 @@ $grid-columns: 12;
 }
 
 #menu {
-	background: rgba(0, 0, 0, 0.6);
+	background: rgba(0, 0, 0, 0.8);
 	border-radius: 2%;
 	margin: -100px 0 0 -50px;
+	font-size: 1.2em;
+	line-height: 1.8em;
 	padding: 50px;
 	padding-top: 120px;
-	position: absolute; 
+	position: absolute;
+	text-align: left;
 	transform: translate(-100%, 0);
 	transition: transform 0.2s;
-	width: 150px;
+	width: 200px;
 }
 
 .nav-links {
