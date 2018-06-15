@@ -1,0 +1,66 @@
+$grid-columns: 12;
+
+@for $i from 1 through $grid-columns {
+  .col-m-#{$i} {
+    width: 100% / 12 * $i;
+  }
+}
+
+@for $i from 1 through $grid-columns {
+	.col-offset-#{$i} {
+		margin-left: 100% / 12 * $i;
+	}
+}
+
+@mixin font-secondary {
+	font-family: 'Muli', sans-serif;
+}
+
+@mixin font-short-description {
+	font-family: 'Roboto', sans-serif;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Montserrat', sans-serif;
+	margin: 0;
+}
+
+.col-m-4 {
+		float: left;
+	}
+
+.container {
+	margin: 0 auto;
+	max-width: 1400px;
+	width: 100%;
+}
+
+.fa-twitter-square:hover {
+	color: #25CCF7;
+}
+
+.fa-facebook-square:hover {
+	color: #4a69bd;
+}
+
+.fa-pinterest-square:hover {
+	color: #d63031;
+}
+
+.fa-google-plus-square:hover {
+	color: #fa8231;
+}
+
+.row {
+	overflow: auto;
+	
+	&::before, &::after {
+		clear: both;
+    	content: " ";
+    	display: table;
+	}
+}
