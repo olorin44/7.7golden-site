@@ -1,0 +1,316 @@
+//styles for header:
+
+#menu-toggle input {
+	display: none;
+}
+
+.nav-links {
+	list-style-type: none;
+	margin: 0;
+
+	a {
+		color: #fff;
+		font-size: 14px;
+		font-weight: bold;
+		line-height: 3em;
+		margin-left: 30px;
+		text-decoration: none;
+	}
+
+	li {
+		display: inline-flex;
+	}
+}
+
+.page-header {
+	margin-bottom: 180px;
+	padding-top: 30px;
+}
+
+.page-header > .container {
+	align-items: center;
+	display: flex;
+	justify-content: space-around;
+}
+
+//styles for section home:
+
+.section-home {
+	background: url("../images/section-home-background-image.jpg") no-repeat;
+	background-position: center;
+	background-size: cover;
+	color: #fff;
+	height: 700px;
+	text-align: center;
+
+	h2 {
+		font-size: 40px;
+		font-style: italic;
+		letter-spacing: -1px;
+		@include font-secondary;
+	}
+
+	h1 {
+		font-size: 75px;
+		font-weight: bold;
+		letter-spacing: -1.88px;
+	}
+}
+
+.section-home-btn {
+	background-color: #fed136;
+	border-radius: 5px;
+	height: 65px;
+	width: 240px;
+	
+	a {
+		color: white;
+		font-size: 18px;
+		font-weight: bold;
+		text-decoration: none;
+	}
+}
+
+//styles for section services:
+
+.section-services {
+	text-align: center;
+	padding: 5% 20%;
+
+	h2 {
+		font-size: 2.2em;
+	}
+
+	h3 {
+		font-size: 1.1em;
+	}
+
+	p {
+		font-size: .9em;
+		@include font-short-description;
+	}
+}
+
+.section-services-icon {
+	margin-top: 50px;
+}
+
+//styles for section portfolio:
+
+.section-portfolio {
+	background-color: #f7f7f7;
+	text-align: center;
+	padding: 30px 23%;
+}
+
+.section-portfolio-title {
+	h2 {
+		color: #222;
+		font-size: 2.2em;
+	}
+
+	p {
+		color: #777;
+		@include font-secondary;
+	}
+}
+
+.section-portfolio-image-text {
+	bottom: 100px;
+	position: relative;
+
+	h3 {
+		color: #333;
+		font-size: 1.2em;
+	}
+
+	p {
+		color: #737373;
+		font-size: .9em;
+		@include font-secondary;
+	}
+}
+
+
+//styles for secion about:
+
+.section-about {
+	position: relative;
+	text-align: center;
+
+	.row {
+		margin-top: 100px;
+	}
+}
+
+.section-about-image {
+	border: 7px solid #f1f1f1;
+	border-radius: 50%;
+}
+
+.section-about-image-yellow-circle {
+	background-color: #fed136;
+	display: inline-block;
+	height: 180px;
+	margin-bottom: 100px;
+	width: 180px;
+
+	h3 {
+		color: #fff;
+		font-size: 1.2em;
+	}
+}
+
+.section-about-title {
+	h2 {
+		color: #222;
+		font-size: 2.2em;
+	}
+
+	p {
+		color: #777;
+		@include font-secondary;
+	}
+}
+
+.section-about-text-left h3, .section-about-text-right h3 {
+	color: #222;
+	font-size: 1.2em;
+}
+
+.section-about-text-left p, .section-about-text-right p {
+	color: #777;
+	font-size: .9em;
+	@include font-secondary;
+}
+
+.section-about-text-left h3, .section-about-text-left p {
+	text-align: right;
+}
+
+.section-about-text-right h3, .section-about-text-right p {
+	text-align: left;
+}
+
+.section-about-vertical-line::after {
+    content:"";
+    position: absolute;
+    z-index: -1;
+    top: 20%;
+    bottom: 10%;
+    left: 50%;
+    border-left: 3px solid #f1f1f1;
+    transform: translate(-50%);
+}
+
+//styles for section team:
+
+.section-team {
+	background-color: #f9f9f9;
+	text-align: center;
+	padding: 5% 20%;
+}
+
+.section-team-person {
+	h3 {
+		color: #222;
+	}
+
+	p {
+		color: #777;
+		font-size: 0.9em;
+		@include font-short-description;
+	}
+}
+
+.section-team-title {
+	h2 {
+		color: #222;
+		font-size: 2.2em;
+	}
+
+	p {
+		color: #777;
+		margin-bottom: 80px;
+		@include font-secondary;
+	}
+}
+
+//styles for section logos:
+
+.section-logos {
+	padding: 5% 5%;
+	text-align: center;
+
+	img {
+		margin: 1.5%;
+
+	}
+}
+
+//styles for section contacts:
+
+form {
+	margin: 0 auto;
+	max-width: 1000px;
+}
+
+#form-name, #form-email, #form-subject {
+	height: 50px;
+}
+
+#form-message {
+	height: 210px;
+	resize: none;
+}
+
+#form-name, #form-email, #form-subject, #form-message {
+	border-radius: 3px;
+	margin-top: 30px;
+	padding: 2px;
+	width: 90%;
+}
+
+.section-contacts {
+	background: #222 url("../images/section-contacts-map-image.png") no-repeat;
+	background-position: 245% -190%;
+	height: 677px;
+	text-align: center;
+
+	h2 {
+		color: #fff;
+		padding-top: 100px;
+	}
+
+	p {
+		color: #777;
+		@include font-secondary;
+	}
+}
+
+.section-contacts-form-half {
+	float: left;
+	width: 49%;
+}
+
+.section-contacts-btn {
+	background-color: #fed136;
+	border-radius: 5px;
+	color: white;
+	font-size: 18px;
+	font-weight: bold;
+	height: 65px;
+	margin-bottom: 100px;
+	margin-top: 30px;
+	width: 240px;
+}
+
+//styles for section footer:
+
+.section-footer {
+	p {
+		display: inline-block;
+		font-size: 0.9em;
+		margin: 50px 110px 50px 220px;
+	}
+}
