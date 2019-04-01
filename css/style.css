@@ -101,6 +101,7 @@
 body {
   font-family: 'Montserrat', sans-serif;
   margin: 0;
+  scroll-behavior: smooth;
 }
 
 .col-m-4 {
@@ -157,6 +158,10 @@ body {
   text-decoration: none;
 }
 
+.nav-links a:hover {
+  opacity: .5;
+}
+
 .nav-links li {
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -201,15 +206,16 @@ body {
 .section-home-btn {
   background-color: #fed136;
   border-radius: 5px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
   height: 65px;
   width: 240px;
 }
 
-.section-home-btn a {
-  color: white;
-  font-size: 18px;
-  font-weight: bold;
-  text-decoration: none;
+.section-home-btn:hover {
+  box-shadow: 2px 2px 5px #fed136;
+  cursor: pointer;
 }
 
 .section-services {
@@ -424,10 +430,19 @@ form {
   width: 240px;
 }
 
+.section-contacts-btn:hover {
+  box-shadow: 2px 2px 5px #fed136;
+  cursor: pointer;
+}
+
 .section-footer p {
   display: inline-block;
   font-size: 0.9em;
   margin: 50px 110px 50px 220px;
+}
+
+.section-footer i:hover {
+  cursor: pointer;
 }
 
 @media (max-width: 1650px) {
@@ -572,6 +587,7 @@ form {
   }
   .nav-links a:hover {
     color: #fff;
+    opacity: 1;
   }
   .nav-links li {
     display: block;

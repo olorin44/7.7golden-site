@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,7 +9,7 @@
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 	</head>
 	<body>	
-		<section class="section-home">
+		<header class="section-home" id="home">
 			<div class="page-header">
 				<div class="container">
 					<a href="#" class="company">
@@ -17,16 +17,16 @@
 					</a>
 					<nav>
 						<div id="menu-toggle">
-						<input type="checkbox"></input>
+						<input type="checkbox">
 						<span></span>
 						<span></span>
 						<span></span>
 						<ul class="nav-links" id="menu">
-							<li><a href="#">HOME</a></li>
-							<li><a href="#">SERVICES</a></li>
-							<li><a href="#">PORTFOLIO</a></li>
-							<li><a href="#">ABOUT</a></li>
-							<li><a href="#">CONTACT</a></li>
+							<li><a href="#home">HOME</a></li>
+							<li><a href="#services">SERVICES</a></li>
+							<li><a href="#portfolio">PORTFOLIO</a></li>
+							<li><a href="#about">ABOUT</a></li>
+							<li><a href="#contact">CONTACT</a></li>
 						</ul>
 					</div>
 					</nav>
@@ -35,12 +35,10 @@
 			<div class="container">
 				<h2>Welcome To Our Studio!</h2>
 				<h1>IT’S NICE TO MEET YOU</h1>
-				<button class="section-home-btn">
-					<a href="#">TELL ME MORE</a>
-				</button>
+				<button class="section-home-btn">TELL ME MORE</button>
 			</div>
-		</section>
-		<section class="section-services">
+		</header>
+		<section class="section-services" id="services">
 			<div class="container">
 				<div class="row">
 					<div class="col-m-12">
@@ -67,7 +65,7 @@
 				</div>
 			</div>
 		</section>
-		<section class="section-portfolio">
+		<section class="section-portfolio" id="portfolio">
 			<div class="container">
 				<div class="row">
 					<div class="col-m-12 section-portfolio-title">
@@ -123,7 +121,7 @@
 				</div>
 			</div>
 		</section>
-		<section class="section-about">
+		<section class="section-about" id="about">
 			<div class="container section-about-vertical-line">
 				<div class="row">
 					<div class="col-m-12 section-about-title">
@@ -228,7 +226,7 @@
 				<img src="images/section-logos-img4.png" alt="microlancer">
 			</div>
 		</section>
-		<section class="section-contacts">
+		<section class="section-contacts" id="contact">
 			<div class="container">
 				<h2>CONTACT US</h2>
 				<p>Proin iaculis purus consequat sem cure.</p>
@@ -239,13 +237,13 @@
 						<input type="text" id="form-subject" placeholder="SUBJECT" minlength="6" required>
 					</div>
 					<div class="section-contacts-form-half">
-						<textarea name="message" type="text" id="form-message" placeholder="YOUR MESSAGE *" minlength="8" required></textarea>
+						<textarea name="message" id="form-message" placeholder="YOUR MESSAGE *" minlength="8" required></textarea>
 					</div>
 					<button type="submit" class="section-contacts-btn">SEND MESSAGE</button>
 				</form>
 			</div>
 		</section>
-		<section class="section-footer">
+		<footer class="section-footer">
 			<div class="container">
 				<p>&copy; Copyright 2014 FreebiesXpress.com</p>
 				<i class="fab fa-twitter-square fa-3x"></i>
@@ -253,6 +251,6 @@
 				<i class="fab fa-pinterest-square fa-3x"></i>
 				<i class="fab fa-google-plus-square fa-3x"></i>
 			</div>
-		</section>
+		</footer>
 	</body>
 </html>
